@@ -32,21 +32,36 @@ myCollectionRepository = myCollectionRepository(db_connection)
 #     }
 # }
 
-order = {
-    "name": "Yuri",
-    "surname": "Alves",
-    "pedidos": {
-        "Xis": 5
-    }
-}
+# order = {
+#     "name": "Yuri",
+#     "surname": "Barros",
+#     "pedidos": {
+#         "Xis": 5
+#     }
+# }
 
-myCollectionRepository.insert_document(order)
+#myCollectionRepository.insert_document(order)
 
-list_of_documents = [
-    {"eric": "cartman"},
-    {"stan": "march"},
-    {"kenny": "mcCormick"},
-    {"kyle": "Broflovski"}
-]
+# list_of_documents = [
+#     {"eric": "cartman"},
+#     {"stan": "march"},
+#     {"kenny": "mcCormick"},
+#     {"kyle": "Broflovski"}
+# ]
 
-myCollectionRepository.insert_list_of_documents(list_of_documents)
+# myCollectionRepository.insert_list_of_documents(list_of_documents)
+
+response = myCollectionRepository.select_many({"name" : "Yuri"})
+#print(response)
+#print()
+
+response2 = myCollectionRepository.select_one({"name" : "Yuri"}) #Get First returned from MongoDB
+#print(response2)
+
+#myCollectionRepository.select_if_property_exists()
+
+#myCollectionRepository.select_many_order()
+
+#myCollectionRepository.select_or()
+
+myCollectionRepository.select_by_object_id()
