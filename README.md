@@ -9,7 +9,7 @@ Certifique-se de ter Python instalado em seu ambiente. Além disso, você precis
 ## Instalação
 
 1. Clone este repositório:
-git clone https://github.com/seu_usuario/seu_repositorio.git
+git clone [https://github.com/yurioliveira3/MongoDB/](https://github.com/yurioliveira3/MongoDB.git)
 
 2. Instale as dependências:
 pip install pymongo
